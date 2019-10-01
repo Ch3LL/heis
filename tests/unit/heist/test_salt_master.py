@@ -59,7 +59,6 @@ class TestSaltMaster:
         assert conf['publish_port'] == '44505'
         assert conf['root_dir'] == root_dir
 
-    @pytest.mark.skip
     @pytest.mark.asyncio
     async def test_single(self,
                           mock_hub: testing.MockHub,
